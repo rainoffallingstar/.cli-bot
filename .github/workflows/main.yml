@@ -1,6 +1,6 @@
 # github action for sync gitee codes to github
 
-name: Sync Github Repos To Gitee
+name: Sync Gitee Repos To Github
 
 on: 
 
@@ -38,13 +38,15 @@ jobs:
 
       with:
 
-        src: gitee/rainoffalingstar  # 源端账户名(github)
+        src: gitee/rainoffalingstar  # 源端账户名(gitee)
 
-        dst: github/rianoffallingstar  # 目的端账户名(gitee)
+        dst: github/rianoffallingstar  # 目的端账户名(github)
+        
+        src_key: ${{ secrets.GITEE_TOKEN }}  # Gitee的私钥
 
         dst_key: ${{ secrets.GH_PRIVATE_KEY }}  # SSH密钥对中的私钥
 
-        dst_token:  ${{ secrets.GH_TOKEN }}  # Gitee账户的私人令牌
+        dst_token:  ${{ secrets.GH_TOKEN }}  # Github账户的私人令牌
 
         account_type: user  # 账户类型
 
