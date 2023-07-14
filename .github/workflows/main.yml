@@ -36,7 +36,7 @@ jobs:
 
       with:
 
-        src: gitee/rainoffalingstar  # 源端账户名(gitee)
+        src: rainoffallingstar:${{ secrets.GITEE_TOKEN }}@gitee/rainoffalingstar  # 源端账户名(gitee)
 
         dst: github/rianoffallingstar  # 目的端账户名(github)
 
