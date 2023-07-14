@@ -32,7 +32,7 @@ jobs:
 
     - name: Sync Gitee Repos To Github  # 名字随便起
 
-      uses: Yikun/hub-mirror-action@v1.2  # 使用Yikun/hub-mirror-action
+      uses: Yikun/hub-mirror-action@master  # 使用Yikun/hub-mirror-action
 
       with:
 
