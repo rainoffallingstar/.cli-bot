@@ -1,6 +1,6 @@
 # github action for sync gitee codes to github
 
-name: Sync Gitee Repos To Github
+name: Sync Gitee Org Repos To Github
 
 on: 
 
@@ -38,15 +38,13 @@ jobs:
 
         src: gitee.com/gmadehub-studio  # 源端账户名(gitee)
 
-        dst: github/rainoffallingstar   # 目的端账户名(github)
+        dst: github/gmade-studio   # 目的端账户名(github)
 
         dst_key: ${{ secrets.GH_PRIVATE_KEY }}  # SSH密钥对中的私钥
 
         dst_token:  ${{ secrets.GH_TOKEN }}  # Github账户的私人令牌
 
-        src_account_type: org
-
-        dst_account_type: user
+        account_type: org
 
         clone_style: "https"  # 使用https方式进行clone，也可以使用ssh
 
@@ -66,15 +64,13 @@ jobs:
 
         src: gitee.com/Hematology_Bioinformatics_SIG  # 源端账户名(gitee)
 
-        dst: github/rainoffallingstar   # 目的端账户名(github)
+        dst: github/hematology-bioinformatic-sig   # 目的端账户名(github)
 
         dst_key: ${{ secrets.GH_PRIVATE_KEY }}  # SSH密钥对中的私钥
 
         dst_token:  ${{ secrets.GH_TOKEN }}  # Github账户的私人令牌
 
-        src_account_type: org
-
-        dst_account_type: user
+        account_type: org
 
         clone_style: "https"  # 使用https方式进行clone，也可以使用ssh
 
@@ -85,5 +81,3 @@ jobs:
         static_list: "HBSIGRocker"  # 静态同步列表，在此填写需要同步的仓库名称，可填写多个
 
         timeout: '600s'  # git超时设置，超时后会自动重试git操作
-        
-        
