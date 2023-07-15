@@ -1,0 +1,21 @@
+name: Build Readme
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-social:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: zylele/social-readme@master
+        with:
+          blog_rss_link: https://rainoffallingstar.gitee.io/static/xml/rss.xml
+          commit_message: Updated social rss by social-readme # commit说明
+          douban_name: 163468120
+          gh_token: ${{ secrets.GH_TOKEN }}
+          repository: rainoffallingstar/rainoffallingstar
