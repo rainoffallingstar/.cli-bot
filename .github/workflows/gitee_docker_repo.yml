@@ -36,7 +36,7 @@ jobs:
 
       with:
 
-        src: gitee.com/gmadehub-studio  # 源端账户名(gitee)
+        src: gitee/gmadehub-studio  # 源端账户名(gitee)
 
         dst: github/gmade-studio   # 目的端账户名(github)
 
@@ -62,7 +62,7 @@ jobs:
 
       with:
 
-        src: gitee.com/Hematology_Bioinformatics_SIG  # 源端账户名(gitee)
+        src: gitee/Hematology_Bioinformatics_SIG  # 源端账户名(gitee)
 
         dst: github/hematology-bioinformatic-sig   # 目的端账户名(github)
 
