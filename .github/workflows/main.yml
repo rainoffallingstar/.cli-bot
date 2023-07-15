@@ -38,7 +38,7 @@ jobs:
 
         src: gitee/rainoffallingstar  # 源端账户名(gitee)
 
-        dst: github/rianoffallingstar  # 目的端账户名(github)
+        dst: github/rainoffallingstar   # 目的端账户名(github)
 
         dst_key: ${{ secrets.GH_PRIVATE_KEY }}  # SSH密钥对中的私钥
 
