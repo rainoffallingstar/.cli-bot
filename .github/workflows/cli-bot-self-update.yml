@@ -3,7 +3,7 @@
 name: cli-bot self-update 
 
 on: 
-
+  workflow_dispatch:
   schedule:
 
     - cron: '0 21,3,9 * * *'
