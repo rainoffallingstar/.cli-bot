@@ -54,7 +54,7 @@ jobs:
         
         #mappings: "rainoffallingstar=>rainoffallingstar.github.io"
 
-        static_list: "rust_code_server,ereboR,mellon,cmupapertex,systemdR,dockerR,sell,Viral-Track,deeplearing_tensorflow_shiny,deepin-rootfs-docker,path-gnn-in-ga,tgca_load_in_ga,survival-analysis-shiny,to_list_in_hefei,Data_Analysis_in_GA_workflow,DLBL-methyarrary,hemat_drug_assistant,rscript"  # 静态同步列表，在此填写需要同步的仓库名称，可填写多个
+        static_list: "cargor,rust_code_server,ereboR,mellon,cmupapertex,systemdR,dockerR,sell,Viral-Track,deeplearing_tensorflow_shiny,deepin-rootfs-docker,path-gnn-in-ga,tgca_load_in_ga,survival-analysis-shiny,to_list_in_hefei,Data_Analysis_in_GA_workflow,DLBL-methyarrary,hemat_drug_assistant,rscript"  # 静态同步列表，在此填写需要同步的仓库名称，可填写多个
 
         timeout: '600s'  # git超时设置，超时后会自动重试git操作
     - name: Sync Github Repos To Gitee  # 名字随便起
